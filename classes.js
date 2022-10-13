@@ -5,22 +5,22 @@ class BankAccount1 {
   AccountNumber;
   balance = 0;
 
-  constructor(customerName, balance = 0){
+  constructor(customerName, balance = 0) {
 
     this.customerName = customerName;
     this.AccountNumber = Date.now();
     this.balance = balance;
-    
+
   }
 
-  deposit(amount){
+  deposit(amount) {
     this.balance += amount;
   }
 
-  withdrawn(amount){
+  withdrawn(amount) {
     this.balance -= amount;
   }
-  
+
 }
 
 const kaushik = new BankAccount1("Kaushik", 3000);
